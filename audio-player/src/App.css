@@ -1,0 +1,168 @@
+#root {
+  max-width: 100%;
+  height: 1200px;
+  margin: 0 auto;
+  background-color: yellowgreen;
+  text-align: center;
+ 
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.App {
+  width: 1300px;
+  height: 1200px;
+  text-align: center;
+  background-color: yellowgreen;
+}
+.nav{
+  width: 100%;
+  height: 50px;
+  padding: 20px;
+  font-size: 45px;
+}
+
+.nameMusic{
+  width: 100%;
+  height: 70px;
+  font-size: 25px;
+  margin-top: 15px;
+}
+
+.main{
+  position: relative;
+  margin-top: 70px;
+  width: 1300;
+  height: 500px;
+}
+
+.audio{
+  position: relative;
+  flex-direction: column;
+  width: 1275px;
+  height: 70%;
+  display: flex;
+}
+
+.controls{
+ position: relative;
+  display: flex;
+  top: 50px;
+  bottom: 0;
+  width: 250px;
+  height: 50px;
+ margin-left: 500px;
+}
+
+.left{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 100%;
+}
+
+
+.right{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 100%;
+}
+
+.addmusic{
+  position: absolute;
+  margin-left: 500px;
+}
+
+
+.custom-audio {
+  width: 100%; /* Сделаем ширину 100% от родительского элемента */
+  height: 100%; /* Автоматическая высота */
+  border: 2px solid #282c34; /* Пример границы */
+  border-radius: 10px; /* Скругленные углы */
+  background-color: #12b93c; /* Цвет фона */
+  padding: 10px; /* Внутренний отступ */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+
+.pp {
+  position: absolute; 
+  left: 20px; 
+  bottom: 50px; 
+}
+
+
+/*орка фон*/
+.audio .background-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/music.png');
+ 
+  background-size: cover;
+  z-index: -1; /* Помещаем фон за другие элементы */
+  animation: animateBackground 5s linear infinite; /* Применяем анимацию */
+}
+
+@keyframes animateBackground {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.list{
+  height: 30px;
+  background-color: white;
+  border: 2px solid blueviolet;
+  border-radius: 10px;
+  
+  margin-bottom: 10px; /* Добавляем отступ между элементами списка */
+
+
+}
